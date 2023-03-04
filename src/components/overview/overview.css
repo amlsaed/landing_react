@@ -1,0 +1,52 @@
+.react-multi-carousel-item{
+    text-align: center;
+}
+.react-multiple-carousel__arrow{
+    display: none;
+}
+
+.list_scn li{
+    list-style: none;
+}
+.list_scn p{
+    margin-left: 65px;
+}
+.list_title{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   position: relative;
+} 
+li:not(:last-child) .list_title:after{
+    content: "";
+    height: 60px;
+    width: 1px;
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    border-radius: 5px;
+    background-color: var(--bb-primary-color);
+}
+.list_title span{
+    width: 50px;
+    height: 50px;
+    background-color: var(--bb-primary-color);
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overview_text{
+    display: flex;
+    justify-self:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overview_text p{
+    width: 70%;
+}

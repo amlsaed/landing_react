@@ -1,0 +1,55 @@
+.About{
+    background-image: url(../assets/Rectangle.svg);
+    background-position: 16px 296px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 430px;
+    margin-left: -5%;
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+
+
+article{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1rem 3rem;
+    gap: 2rem;
+    width: 100%;
+}
+
+.article_component{
+    width: calc(50% - 2rem);
+}
+.icons_conatiner{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 50%;
+}
+
+.icons_conatiner div{
+    width: calc(50% - 1rem);
+}
+
+.icons_conatiner span{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.icons_conatiner div:first-child span{
+background-color: var(--bg-icon1);
+}
+.icons_conatiner div:nth-child(2) span{
+    background-color: var(--bg-icon2);
+}
+.icons_conatiner div:nth-child(3) span{
+    background-color: var(--bg-icon3);
+}
+.icons_conatiner div:nth-child(4) span{
+    background-color: var(--bg-icon4);
+}

@@ -1,0 +1,54 @@
+.center_scn h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services h3{
+   text-align: center;
+}
+
+.list_statics{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list_statics ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+.list_statics ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.list_statics ul li span:first-child{
+    color: var(--bb-primary-color);
+    font-size: var(--h3);
+    font-weight: 600;
+  }
+  .list_statics ul li span:nth-child(2){
+
+  }
+
+  .srvice_carousel_container{
+    width: 50%;
+  }
+
+  .testmonial_item{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    padding: 1rem;
+    border-radius: 15px;
+    height: 200px;
+    width: 75%;
+    margin: 10px;
+  }
