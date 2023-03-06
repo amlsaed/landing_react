@@ -1,15 +1,21 @@
 .About{
-    background-image: url(../assets/Rectangle.svg);
+    /* background-image: url(../assets/Rectangle.svg);
     background-position: 16px 296px;
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 430px;
-    margin-left: -5%;
-    padding-left: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 10%; */
 }
-
-
+.about_imgs{
+ position: relative;
+}
+.about_imgs .rect_img{
+    position: absolute;
+    z-index: -1;
+    left: -14rem;
+    top: -11rem;
+    width: 100%;
+}
 article{
     display: flex;
     justify-content: space-between;

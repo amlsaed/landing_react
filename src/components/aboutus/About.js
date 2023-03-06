@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
 import Screen from '../assets/NoPath.svg'
+import Rect from "../assets/Rectangle.svg"
 import Icon_1 from '../assets/Icon simple-boost.png'
 import Icon_2 from '../assets/Icon awesome-bootstrap.png'
 import Icon_3 from '../assets/Icon material-high-quality.png'
@@ -46,8 +47,9 @@ function About() {
                     </div>
         </article>
         <article>
-                <div>
-                    <img className='big_banner_img' src={Screen} alt="screen img"/>
+                <div className='about_imgs'>
+                        <img className='big_banner_img' src={Screen} alt="screen img"/>
+                        <img className='rect_img' src={Rect} alt="screen img"/>
                 </div>
                 <div className='article_component'>
                         <h3>Best Platform for the</h3>

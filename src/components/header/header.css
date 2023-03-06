@@ -15,6 +15,10 @@ nav ul{
     gap: 1rem;
 }
 
+   
+
+
+
 nav ul li{
     list-style: none;
 }
@@ -54,7 +58,7 @@ nav ul li a img{
 }
 .sm_menu{
     position: fixed;
-    display: flex;
+    display: none;
     background: #fff;
     top: 0;
     height: 100%;
@@ -66,15 +70,64 @@ nav ul li a img{
 }
 .sm_menu ul{
     flex-direction: column;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 3rem;
+    margin-top: 3rem;
 }
 .sm_menu button{
     position: absolute;
     top: 0;
     right: 0;
 }
+.sm_nav button{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 24%;
+    transition: 200ms linear;
+}
+.sm_nav button:hover{
+    
+    background: #d14450;
+    
+}
+.banner h5,.banner p{
+    color: #fff;
+}
 @media screen and (max-width: 970px){
     .bg_nav{display: none;}
     .sm_nav{
         display: flex;
+    }
+    nav .primary_button{
+        order: 1;
+    }
+    nav a:has(img){
+        order:2;
+    }
+    nav .sm_nav {
+        order:3;
+    }
+    .banner .banner_img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px){
+    nav .primary_button{
+        display: none;
+    }
+    article{
+        padding: 1rem!important;
+    }
+    .layout {
+        width: 100%;
+        margin:1rem 0!important;
     }
 }

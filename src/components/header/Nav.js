@@ -3,6 +3,12 @@ import Logo from '../assets/logo.png';
 import {BiMenu} from "react-icons/bi"
 import {AiOutlineClose} from 'react-icons/ai'
 function Nav() {
+    const HanleOpenMenu = ()=>{
+        document.querySelector(".sm_menu").style.display="flex"
+    }
+    const HanleCloseMenu = ()=>{
+        document.querySelector(".sm_menu").style.display="none"
+    }
   return (
     <nav>
         <a>
@@ -25,9 +31,9 @@ function Nav() {
 
         <a className='primary_button'>About us</a>
         <div class="sm_nav">
-                <button><BiMenu/></button>
+                <button type='button' onClick={HanleOpenMenu}><BiMenu/></button>
                 <div class="sm_menu">
-                        <button><AiOutlineClose/></button>
+                        <button type='button' onClick={HanleCloseMenu}><AiOutlineClose/></button>
                         <ul>
                                 <li>
                                     <a href="#">BROWSER</a>
